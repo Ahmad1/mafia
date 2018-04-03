@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mafia</string>
+    <string name="exit_casting">Some people have no role\nYou sure you want to poop in the game?</string>
+    <string name="setup_first_txt">There are no players defined for game\nFirst do the Initial setup</string>
+    <string name="status_change">Life wishes or Zombie bites has reached the limit, Someone in the city must change status!</string>
+
+</resources>

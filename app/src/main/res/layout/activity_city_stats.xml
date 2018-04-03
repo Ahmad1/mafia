@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <Button
+        android:id="@+id/stats_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/done_button_border"
+        android:text="Done" />
+
+    <LinearLayout
+        android:id="@+id/vote_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/stats_done"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/day_vote_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/done_button_border"
+            android:layout_weight="1"
+            android:lineSpacingExtra="8dp"
+            android:onClick="onClick"
+            android:text="Day\nVotes" />
+
+        <Button
+            android:id="@+id/timer_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/done_button_border"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:lineSpacingExtra="8dp"
+            android:onClick="onClick"
+            android:text="Day\nTimer" />
+
+        <Button
+            android:id="@+id/night_vote_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/done_button_border"
+            android:layout_weight="1"
+            android:lineSpacingExtra="8dp"
+            android:onClick="onClick"
+            android:text="Night\nVotes" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_above="@id/vote_btn_container">
+
+        <LinearLayout
+            android:id="@+id/stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
